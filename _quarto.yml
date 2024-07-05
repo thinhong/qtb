@@ -1,0 +1,31 @@
+project:
+  type: book
+  output-dir: docs
+  
+execute:
+  freeze: auto
+
+book:
+  title: "qtb"
+  author:
+    - name: Thinh Ong
+      url: https://drthinhong.com/
+      orcid: 0000-0001-6772-9291
+  date: "05/07/2024"
+  chapters:
+    - index.qmd
+    - references.qmd
+
+bibliography: references.bib
+csl: apa.csl
+
+format:
+  html:
+    theme: [cosmo, theme.scss]
+    code-overflow: wrap
+    code-copy: true
+    fig-format: svg
+    df-print: paged
+    toc-depth: 5
+    toc-expand: 3
+
